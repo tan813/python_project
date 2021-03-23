@@ -1,0 +1,48 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "test_loginParam",
+    "children" : [ {
+      "name" : "登录测试用例-输入正确账号，密码，登录成功",
+      "uid" : "c9da114580e0161b",
+      "parentUid" : "751f031a6929e95e9a84a0d19480cea6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1615819899654,
+        "stop" : 1615819899656,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'success'", "{'username': 'tan', 'password': '123'}", "'输入正确账号，密码，登录成功'" ]
+    }, {
+      "name" : "登录测试用例-输入正确账号，密码，登录成功",
+      "uid" : "49514716e77d98bd",
+      "parentUid" : "751f031a6929e95e9a84a0d19480cea6",
+      "status" : "passed",
+      "time" : {
+        "start" : 1615819899674,
+        "stop" : 1615819899676,
+        "duration" : 2
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'success'", "{'username': 'tan1', 'password': '123'}", "'输入正确账号，密码，登录成功'" ]
+    }, {
+      "name" : "登录测试用例-输入错误账号，密码，登录失败",
+      "uid" : "3f1e417328e272c0",
+      "parentUid" : "751f031a6929e95e9a84a0d19480cea6",
+      "status" : "failed",
+      "time" : {
+        "start" : 1615819899693,
+        "stop" : 1615819899700,
+        "duration" : 7
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "'failed'", "{'username': 'tan', 'password': '1234'}", "'输入错误账号，密码，登录失败'" ]
+    } ],
+    "uid" : "751f031a6929e95e9a84a0d19480cea6"
+  } ]
+}

@@ -1,0 +1,31 @@
+[ {
+  "uid" : "3f1e417328e272c0",
+  "name" : "登录测试用例-输入错误账号，密码，登录失败",
+  "time" : {
+    "start" : 1615819899693,
+    "stop" : 1615819899700,
+    "duration" : 7
+  },
+  "status" : "failed",
+  "severity" : "normal"
+}, {
+  "uid" : "c9da114580e0161b",
+  "name" : "登录测试用例-输入正确账号，密码，登录成功",
+  "time" : {
+    "start" : 1615819899654,
+    "stop" : 1615819899656,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+}, {
+  "uid" : "49514716e77d98bd",
+  "name" : "登录测试用例-输入正确账号，密码，登录成功",
+  "time" : {
+    "start" : 1615819899674,
+    "stop" : 1615819899676,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

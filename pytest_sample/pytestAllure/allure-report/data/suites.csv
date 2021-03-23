@@ -1,0 +1,4 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Mon Mar 15 22:51:39 CST 2021","Mon Mar 15 22:51:39 CST 2021","7","","test_loginParam","","","","登录测试用例-输入错误账号，密码，登录失败",""
+"passed","Mon Mar 15 22:51:39 CST 2021","Mon Mar 15 22:51:39 CST 2021","2","","test_loginParam","","","","登录测试用例-输入正确账号，密码，登录成功",""
+"passed","Mon Mar 15 22:51:39 CST 2021","Mon Mar 15 22:51:39 CST 2021","2","","test_loginParam","","","","登录测试用例-输入正确账号，密码，登录成功",""

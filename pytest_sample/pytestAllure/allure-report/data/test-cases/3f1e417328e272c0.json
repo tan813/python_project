@@ -1,0 +1,83 @@
+{
+  "uid" : "3f1e417328e272c0",
+  "name" : "登录测试用例-输入错误账号，密码，登录失败",
+  "fullName" : "test_loginParam#test_login",
+  "historyId" : "86935499028a926c02cbe32bd59a7151",
+  "time" : {
+    "start" : 1615819899693,
+    "stop" : 1615819899700,
+    "duration" : 7
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: assert 'success' == 'failed'\n  - failed\n  + success",
+  "statusTrace" : "test_input = {'password': '1234', 'username': 'tan'}, expected = 'failed'\ntitle = '输入错误账号，密码，登录失败'\n\n    @allure.title(\"登录测试用例-{title}\")\n    @pytest.mark.parametrize(\n        'test_input,expected,title',\n        test_datas,\n    )\n    def test_login(test_input, expected, title):\n        result = login(test_input['username'], test_input['password'])\n>       assert result['msg'] == expected\nE       AssertionError: assert 'success' == 'failed'\nE         - failed\nE         + success\n\ntest_loginParam.py:30: AssertionError",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: assert 'success' == 'failed'\n  - failed\n  + success",
+    "statusTrace" : "test_input = {'password': '1234', 'username': 'tan'}, expected = 'failed'\ntitle = '输入错误账号，密码，登录失败'\n\n    @allure.title(\"登录测试用例-{title}\")\n    @pytest.mark.parametrize(\n        'test_input,expected,title',\n        test_datas,\n    )\n    def test_login(test_input, expected, title):\n        result = login(test_input['username'], test_input['password'])\n>       assert result['msg'] == expected\nE       AssertionError: assert 'success' == 'failed'\nE         - failed\nE         + success\n\ntest_loginParam.py:30: AssertionError",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "43caaf4cb4b56ab8",
+      "name" : "stdout",
+      "source" : "43caaf4cb4b56ab8.txt",
+      "type" : "text/plain",
+      "size" : 35
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_loginParam"
+  }, {
+    "name" : "host",
+    "value" : "WIN-3UCKIVEOBUB"
+  }, {
+    "name" : "thread",
+    "value" : "18344-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_loginParam"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expected",
+    "value" : "'failed'"
+  }, {
+    "name" : "test_input",
+    "value" : "{'username': 'tan', 'password': '1234'}"
+  }, {
+    "name" : "title",
+    "value" : "'输入错误账号，密码，登录失败'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ ]
+  },
+  "source" : "3f1e417328e272c0.json",
+  "parameterValues" : [ "'failed'", "{'username': 'tan', 'password': '1234'}", "'输入错误账号，密码，登录失败'" ]
+}

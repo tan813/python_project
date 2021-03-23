@@ -1,0 +1,75 @@
+{
+  "uid" : "c9da114580e0161b",
+  "name" : "登录测试用例-输入正确账号，密码，登录成功",
+  "fullName" : "test_loginParam#test_login",
+  "historyId" : "c519b2b9e1c7a2aa52c181b6b42be797",
+  "time" : {
+    "start" : 1615819899654,
+    "stop" : 1615819899656,
+    "duration" : 2
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "506c812edff4f21a",
+      "name" : "stdout",
+      "source" : "506c812edff4f21a.txt",
+      "type" : "text/plain",
+      "size" : 34
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "suite",
+    "value" : "test_loginParam"
+  }, {
+    "name" : "host",
+    "value" : "WIN-3UCKIVEOBUB"
+  }, {
+    "name" : "thread",
+    "value" : "18344-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "test_loginParam"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "expected",
+    "value" : "'success'"
+  }, {
+    "name" : "test_input",
+    "value" : "{'username': 'tan', 'password': '123'}"
+  }, {
+    "name" : "title",
+    "value" : "'输入正确账号，密码，登录成功'"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "c9da114580e0161b.json",
+  "parameterValues" : [ "'success'", "{'username': 'tan', 'password': '123'}", "'输入正确账号，密码，登录成功'" ]
+}

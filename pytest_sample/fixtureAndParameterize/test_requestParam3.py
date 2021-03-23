@@ -30,7 +30,7 @@ def user(request):
 def test_register(user):
     # 执行注册操作
     # ...
-    print("%s 注册成功!\n" % user)
+    print("%s 注册成功!!!\n" % user)
 
 
 if __name__ == "__main__":

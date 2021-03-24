@@ -1,6 +1,6 @@
 from selenium.webdriver.common.by import By
 
-from pageobject.basepage import BasePage
+from page_object.pageobject.basepage import BasePage
 
 
 class WanyiPage(BasePage):

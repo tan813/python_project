@@ -30,6 +30,7 @@
           <option value="unittest.main" />
           <option value="unittest_sample.unittest_test.test_calculator.test_calculator" />
           <option value="unittest_sample.test_baidu.test_baidu.TestBaidu.driver" />
+          <option value="poium.PageElement" />
         </list>
       </option>
     </inspection_tool>

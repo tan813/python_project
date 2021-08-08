@@ -5,10 +5,11 @@
 import time
 from time import sleep
 import pytest
-from selenium import webdriver
 
 
 class Test_param:
+
+
 
     def baidu_search(self, searchKey, browser):
         browser.get('https://www.baidu.com')
@@ -28,9 +29,10 @@ class Test_param:
         """测试pytest参数化搜索"""
         self.baidu_search(search_key, browser)
         title = browser.title
+        # pytest.xfail("功能尚未完成!!!")
         assert title == search_key + '_1百度搜索'
 
 
 if __name__ == '__main__':
     now = time.strftime("%H_%M_%S")
-    pytest.main(['-v', '--html=./report/'+now + 'result.html', './test_baiduSearch.py'])
+    pytest.main(['-s','-v', '--html=./report/'+now + 'result.html', './test_baiduSearch.py'])

@@ -1,11 +1,13 @@
 <component name="InspectionProjectProfileManager">
   <profile version="1.0">
     <option name="myName" value="Project Default" />
+    <inspection_tool class="PyAttributeOutsideInitInspection" enabled="false" level="WEAK WARNING" enabled_by_default="false" />
     <inspection_tool class="PyPep8Inspection" enabled="true" level="WEAK WARNING" enabled_by_default="true">
       <option name="ignoredErrors">
         <list>
           <option value="W391" />
           <option value="E262" />
+          <option value="E722" />
         </list>
       </option>
     </inspection_tool>
@@ -13,6 +15,7 @@
       <option name="ignoredErrors">
         <list>
           <option value="N801" />
+          <option value="N803" />
         </list>
       </option>
     </inspection_tool>
@@ -31,6 +34,7 @@
           <option value="unittest_sample.unittest_test.test_calculator.test_calculator" />
           <option value="unittest_sample.test_baidu.test_baidu.TestBaidu.driver" />
           <option value="poium.PageElement" />
+          <option value="property.frame" />
         </list>
       </option>
     </inspection_tool>

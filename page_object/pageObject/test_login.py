@@ -2,12 +2,12 @@ import unittest
 
 from selenium import webdriver
 
-from page_object.pageobject.baidupage import BaiduPage
-from page_object.pageobject.wanyipage import WanyiPage
+from page_object.pageObject.baidupage import BaiduPage
+from page_object.pageObject.wanyipage import WanyiPage
 
 
 class TestLogin(unittest.TestCase):
-    '''登录网易邮箱的case'''
+    """登录网易邮箱的case"""
 
     def setUp(self):
         self.driver = webdriver.Chrome()

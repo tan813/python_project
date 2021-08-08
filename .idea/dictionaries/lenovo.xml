@@ -2,11 +2,16 @@
   <dictionary name="lenovo">
     <words>
       <w>alluredir</w>
+      <w>caselist</w>
       <w>datas</w>
+      <w>findelement</w>
+      <w>openbrowser</w>
       <w>poium</w>
       <w>pytest</w>
+      <w>tanjinbai</w>
       <w>tearup</w>
       <w>testcase</w>
+      <w>xfail</w>
     </words>
   </dictionary>
 </component>

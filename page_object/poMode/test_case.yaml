@@ -1,0 +1,42 @@
+loginPage:
+  - title: 登录失败
+    desc: 登录的用例
+    cases:
+      - step: 打开登录页
+        method: geturl
+        url: http://jmaxsim.tuqiangol.com
+
+      - step: 输入账号
+        method: input
+        locator: //*[@id="app"]/div/div/div[2]/div/form/div[1]/div/span[1]/div/input
+        value: jdx
+
+      - step: 输入密码
+        method: input
+        locator: //*[@id="app"]/div/div/div[2]/div/form/div[2]/div/span/div/input
+        value: jdx12345
+
+      - step: 点击登录
+        method: click
+        locator: //*[@id="app"]/div/div/div[2]/div/form/div[4]/button
+
+  - title: 登录成功
+    desc: 登录的用例
+    cases:
+      - step: 打开登录页
+        method: geturl
+        url: http://jmaxsim.tuqiangol.com
+
+      - step: 输入账号
+        method: input
+        locator: //*[@id="app"]/div/div/div[2]/div/form/div[1]/div/span[1]/div/input
+        value: jdx
+
+      - step: 输入密码
+        method: input
+        locator: //*[@id="app"]/div/div/div[2]/div/form/div[2]/div/span/div/input
+        value: jdx1234567
+
+      - step: 点击登录
+        method: click
+        locator: //*[@id="app"]/div/div/div[2]/div/form/div[4]/button

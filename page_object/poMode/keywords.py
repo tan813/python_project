@@ -2,7 +2,7 @@
 """
 @Author   : tanjinbai
 @Time     : 2021-08-08 21:14
-@Function : 创建SimWeb类定义关键字方法
+@Function : 创建SimWeb类定义关键字方法!
 """
 from time import sleep
 

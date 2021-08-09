@@ -2,7 +2,7 @@
 """
 @Author   : tanjinbai
 @Time     : 2021-08-08 21:43
-@Function : 请输入模块功能描述
+@Function : pytest执行登录用例
 """
 import pytest
 import yaml

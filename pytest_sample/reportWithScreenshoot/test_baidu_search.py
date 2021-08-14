@@ -35,4 +35,4 @@ class Test_param:
 
 if __name__ == '__main__':
     now = time.strftime("%H_%M_%S")
-    pytest.main(['-s','-v', '--html=./report/'+now + 'result.html', './test_baiduSearch.py'])
+    pytest.main(['-s','-v', '--html=./report/'+now + 'result.html', './test_baidu_search.py'])

@@ -4,6 +4,7 @@ import csv
 case = []
 with open('./test.csv', 'r') as csvFile:
     datas = csv.reader(csvFile)
+    next(datas)
     for row in datas:
-        case.append(row)
-print(case)
+        # case.append(row)
+        print(row[1])

@@ -7,8 +7,7 @@ from time import sleep
 from selenium import webdriver
 
 
-class testBaidu(unittest.TestCase):
-
+class TestBaidu(unittest.TestCase):
 
     @classmethod
     def setUpClass(cls):
@@ -45,6 +44,7 @@ class testBaidu(unittest.TestCase):
     @classmethod
     def tearDownClass(cls):
         cls.driver.quit()
+
 
 if __name__ == '__main__':
     unittest.main(verbosity=2)

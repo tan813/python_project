@@ -43,4 +43,4 @@ class Test_param:
 
 
 if __name__ == '__main__':
-    pytest.main(['-s', '--html=./report/test.html', 'test_htmlReport.py'])
+    pytest.main(['-s', '--html=./report/test.html', 'pytest_fixture2.py'])

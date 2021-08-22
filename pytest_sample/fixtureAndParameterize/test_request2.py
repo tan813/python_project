@@ -38,4 +38,4 @@ def test_login(input_user, input_pwd):
 
 
 if __name__ == "__main__":
-    pytest.main(['-s', 'test_requestParam2.py'])
+    pytest.main(['-s', 'test_request2.py'])

@@ -42,5 +42,5 @@ class Test_param:
 
 
 if __name__ == '__main__':
-    # pytest.main(['-v', './pytest_Fixture.py'])
-    pytest.main(['-v', '--html=./report/result.html', './pytest_Fixture.py'])
+    # pytest.main(['-v', './pytest_fixture.py'])
+    pytest.main(['-v', '--html=./report/result.html', './pytest_fixture.py'])

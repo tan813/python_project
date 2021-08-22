@@ -45,14 +45,12 @@ def pytest_runtest_makereport(item, call):
     if report.when == 'call' or report.when == "setup":
         xfail = hasattr(report, 'wasxfail')
         if (report.skipped and xfail) or (report.failed and not xfail):
-            case_path = report.nodeid.replace("::", "_") + ".png"
-            # FileName: test_baiduSearch.py_Test_param_test_param[selenium].png
-            img_path = case_path.split("/")[-1]
-            # img_path :report/test_baiduSearch.py_Test_param_test_param[selenium].png
-            _capture_screenshot(img_path)
-            if img_path:
+            casePath = report.nodeid.replace("::", "_") + ".png"
+            # casePath: test_baiduSearch.py_Test_param_test_param[selenium].png
+            _capture_screenshot(casePath)
+            if casePath:
                 html = '<div><img src="%s" alt="screenshot" style="width:380px;height:228px;" ' \
-                       'onclick="window.open(this.src)" align="right"/></div>' % img_path
+                       'onclick="window.open(this.src)" align="right"/></div>' % casePath
                 extra.append(pytest_html.extras.html(html))
         report.extra = extra
 
@@ -75,7 +73,6 @@ def pytest_html_results_summary(prefix, summary, postfix):
     # prefix.clear() # 清空summary中的内容
     prefix.extend([html.p("所属部门: xxx")])
     prefix.extend([html.p("测试执行人: xxx")])
-
 
 
 # 添加Environment信息

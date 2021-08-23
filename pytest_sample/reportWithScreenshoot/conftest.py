@@ -26,6 +26,11 @@ def pytest_runtest_makereport(item, call):
     outcome = yield
     # 从调用结果获取测试报告
     report = outcome.get_result()
+    print("\nreport.when is:"+report.when)
+    print("\nreport.skipped is:")
+    print(report.skipped)
+    print("\nreport.failed is:")
+    print(report.failed)
     # 添加用例描述信息
     report.description = str(item.function.__doc__)
     # extra属性存在则返回，不存在返回[]
@@ -42,6 +47,7 @@ def pytest_runtest_makereport(item, call):
     #         extra.append(pytest_html.extras.html('<div>Failure TestCase</div>'))
     #     report.extra = extra
 
+    # @pytest.mark.skip标记用例为skip，在setup阶段report.skipped=True
     if report.when == 'call' or report.when == "setup":
         xfail = hasattr(report, 'wasxfail')
         if (report.skipped and xfail) or (report.failed and not xfail):

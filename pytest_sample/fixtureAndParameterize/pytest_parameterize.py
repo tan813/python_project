@@ -4,14 +4,19 @@ import math
 
 import pytest
 
+testDate = [(2, 2, 4),
+            (2, 3, 8),
+            (1, 9, 9)
+            ]
+
 
 @pytest.mark.parametrize(
     "base,exponent,expected",
-    [(2, 2, 4),
-     (2, 3, 8),
-     (1, 9, 9)
-     ],
-    ids=['case1', 'case2', 'case3']
+    testDate,
+    ids=[
+        "%d的%d次方是%d" % (data[0], data[1], data[2]) for data in testDate
+    ]
+    # ids=['case1', 'case2', 'case3']
 )
 @pytest.mark.flaky(reruns=3, reruns_delay=3)
 def test_pow(base, exponent, expected):

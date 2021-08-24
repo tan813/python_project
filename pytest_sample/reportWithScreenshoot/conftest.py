@@ -33,6 +33,9 @@ def pytest_runtest_makereport(item, call):
     print(report.failed)
     # 添加用例描述信息
     report.description = str(item.function.__doc__)
+    # pytest-html源码中已经有转码语句了,与conftest.py转码语句发生了冲突
+    # report.nodeid = report.nodeid.encode("utf-8").decode("unicode_escape")
+    print(report.nodeid)
     # extra属性存在则返回，不存在返回[]
     extra = getattr(report, 'extra', [])
     # 只关注用例本身的执行结果，添加判断
@@ -91,7 +94,7 @@ def pytest_configure(config):
 @pytest.mark.optionalhook
 def pytest_html_results_table_header(cells):
     # 添加用例描述
-    cells.insert(2, html.th('Description'))
+    cells.insert(1, html.th('Description'))
     # 添加时间
     # cells.insert(1, html.th('Time', class_='sortable time', col='time'))
     # 删除最后links列的内容
@@ -101,7 +104,7 @@ def pytest_html_results_table_header(cells):
 @pytest.mark.optionalhook
 def pytest_html_results_table_row(report, cells):
     # 添加用例描述
-    cells.insert(2, html.td(report.description))
+    cells.insert(1, html.td(report.description))
     # 添加时间
     # cells.insert(1, html.td(datetime.utcnow(), class_='col-time'))
     # 删除最后links列的内容

@@ -6,24 +6,23 @@ import time
 from time import sleep
 import pytest
 
+testData = ['selenium']
+
 
 class Test_param:
-
-
 
     def baidu_search(self, searchKey, browser):
         browser.get('https://www.baidu.com')
         browser.maximize_window()
         browser.find_element_by_id('kw').send_keys(searchKey)
+        sleep(6)
         browser.find_element_by_id('su').click()
         sleep(1)
 
     @pytest.mark.parametrize(
         "search_key",
-        ['selenium',
-         # 'unittest',
-         # 'parameterized'
-         ],
+        testData,
+        ids=["百度搜索关键字%s"%testData[0]]
     )
     def test_param(self, search_key, browser):
         """测试pytest参数化搜索"""
@@ -35,4 +34,4 @@ class Test_param:
 
 if __name__ == '__main__':
     now = time.strftime("%H_%M_%S")
-    pytest.main(['-s','-v', '--html=./report/'+now + 'result.html', './test_baidu_search.py'])
+    pytest.main(['-s', '-v', '--capture=sys', '--html=./report/' + now + 'result.html', './test_baidu_search.py'])

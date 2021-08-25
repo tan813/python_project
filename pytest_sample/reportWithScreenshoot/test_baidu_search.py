@@ -15,14 +15,14 @@ class Test_param:
         browser.get('https://www.baidu.com')
         browser.maximize_window()
         browser.find_element_by_id('kw').send_keys(searchKey)
-        sleep(6)
+        sleep(3)
         browser.find_element_by_id('su').click()
         sleep(1)
 
     @pytest.mark.parametrize(
         "search_key",
         testData,
-        ids=["百度搜索关键字%s"%testData[0]]
+        ids=["百度搜索关键字%s" % testData[0]]
     )
     def test_param(self, search_key, browser):
         """测试pytest参数化搜索"""
